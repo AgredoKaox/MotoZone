@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporte de Incidencias</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Reporte de Incidencias</h1>
+        <p>Formulario para el registro de novedades</p>
+    </header>
+    <nav aria-label="Navegación principal">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="motos.html">Motos</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="repuestos.html">Repuestos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section aria-labelledby="titulo-reporte">
+            <h2 id="titulo-reporte">Registrar una incidencia</h2>
+
+            <p>
+                Utiliza este formulario para informar sobre errores,
+                problemas o novedades detectadas durante el desarrollo
+                del proyecto.
+            </p>
+
+            <aside aria-labelledby="aviso-privacidad">
+                <h3 id="aviso-privacidad">Aviso de privacidad</h3>
+
+                <p>
+                    La información registrada se utilizará únicamente
+                    con fines académicos para documentar y revisar las
+                    incidencias reportadas. Evita incluir información
+                    personal que no sea necesaria.
+                </p>
+            </aside>
+
+            <form action="#" method="post">
+                <div>
+                    <label for="nombre">Nombre del Aprendiz:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div>
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+
+                <div>
+                    <label for="tipo-incidencia">Tipo de incidencia:</label>
+                    <select id="tipo-incidencia" name="tipo-incidencia" required>
+                        <option value="">Selecciona una opción</option>
+                        <option value="error">Error del sistema</option>
+                        <option value="diseno">Problema de diseño</option>
+                        <option value="contenido">Error de contenido</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+
+                <fieldset>
+                    <legend>Lista de chequeo de la incidencia</legend>
+
+                    <div>
+                        <input type="checkbox" id="error-reproducible" name="verificaciones" value="reproducible">
+                        <label for="error-reproducible">
+                            El error se puede reproducir
+                        </label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="error-documentado" name="verificaciones" value="documentado">
+                        <label for="error-documentado">
+                            El problema está documentado
+                        </label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="evidencia-disponible" name="verificaciones" value="evidencia">
+                        <label for="evidencia-disponible">
+                            Se cuenta con evidencia del problema
+                        </label>
+                    </div>
+                </fieldset>
+
+                <div>
+                    <label for="descripcion">
+                        Descripción de la incidencia:
+                    </label>
+                    <textarea id="descripcion" name="descripcion" rows="5"
+                        placeholder="Describe qué ocurrió, cómo reproducir el problema y qué resultado esperabas..."
+                        required></textarea>
+                </div>
+
+                <div>
+                    <label for="evidencia">
+                        Adjuntar evidencia (imagen):
+                    </label>
+                    <input type="file" id="evidencia" name="evidencia" accept="image/*">
+                </div>
+
+                <div>
+                    <button type="submit">
+                        Registrar incidencia
+                    </button>
+                </div>
+
+
+            </form>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Formulario académico de incidencias</p>
+        <p>Documento elaborado por: [Juan Sebastian Agredo Garcia]</p>
+        <p>Programa: Análisis y Desarrollo de Software - SENA</p>
+    </footer>
+
+</body>
+
+</html>
