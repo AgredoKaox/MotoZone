@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | MotoZone</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Contacta con MotoZone</h1>
+
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="motos.html">Motocicletas</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="repuestos.html">Repuestos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Información de atención</h2>
+            <p><strong>Correo:</strong> contacto@motozone.example</p>
+            <p><strong>Teléfono:</strong> Información de ejemplo</p>
+            <p><strong>Horario:</strong> Lunes a sábado, de 8:00 a. m. a 6:00 p. m.</p>
+        </section>
+
+        <section>
+            <h2>Envíanos una consulta</h2>
+
+            <form action="#" method="get">
+
+                <p>
+                    <label for="nombre">Nombre completo:</label>
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        required
+                    >
+                </p>
+
+                <p>
+                    <label for="correo">Correo electrónico:</label>
+                    <input
+                        type="email"
+                        id="correo"
+                        name="correo"
+                        required
+                    >
+                </p>
+
+                <p>
+                    <label for="asunto">Motivo de consulta:</label>
+                    <select id="asunto" name="asunto" required>
+                        <option value="">Selecciona una opción</option>
+                        <option value="compra">Compra de motocicleta</option>
+                        <option value="servicios">Servicios</option>
+                        <option value="repuestos">Repuestos</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea
+                        id="mensaje"
+                        name="mensaje"
+                        rows="5"
+                        cols="35"
+                        required
+                    ></textarea>
+                </p>
+
+                <button type="submit">Enviar consulta</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 MotoZone.</p>
+        <a href="index.html">Volver al inicio</a>
+    </footer>
+
+</body>
+
+</html>
