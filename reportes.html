@@ -70,6 +70,60 @@
                         <option value="otro">Otro</option>
                     </select>
                 </div>
+
+                <fieldset>
+                    <legend>Lista de chequeo de la incidencia</legend>
+
+                    <div>
+                        <input
+                            type="checkbox"
+                            id="error-reproducible"
+                            name="verificaciones"
+                            value="reproducible"
+                        >
+                        <label for="error-reproducible">
+                            El error se puede reproducir
+                        </label>
+                    </div>
+
+                    <div>
+                        <input
+                            type="checkbox"
+                            id="error-documentado"
+                            name="verificaciones"
+                            value="documentado"
+                        >
+                        <label for="error-documentado">
+                            El problema está documentado
+                        </label>
+                    </div>
+
+                    <div>
+                        <input
+                            type="checkbox"
+                            id="evidencia-disponible"
+                            name="verificaciones"
+                            value="evidencia"
+                        >
+                        <label for="evidencia-disponible">
+                            Se cuenta con evidencia del problema
+                        </label>
+                    </div>
+                </fieldset>
+
+                <div>
+                    <label for="descripcion">
+                        Descripción de la incidencia:
+                    </label>
+                    <textarea
+                        id="descripcion"
+                        name="descripcion"
+                        rows="5"
+                        placeholder="Describe qué ocurrió, cómo reproducir el problema y qué resultado esperabas..."
+                        required
+                    ></textarea>
+                </div>
+
             </form>
 
         </section>
